@@ -87,7 +87,14 @@
                                     "subscription": false,
                                     "stateful": 0
                                 },
-                                "extra_compute_units": 0
+                                "extra_compute_units": 0,
+                                "parsers": [
+                                    {
+                                        "parse_path": ".params.finality",
+                                        "value": "latest",
+                                        "parse_type": "DEFAULT_VALUE"
+                                    }
+                                ]
                             },
                             {
                                 "name": "EXPERIMENTAL_changes_in_block",
@@ -465,7 +472,6 @@
                                     }
                                 ]
                             }
-                            
                         ],
                         "extensions": [
                             {
